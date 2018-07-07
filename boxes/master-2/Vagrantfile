@@ -1,0 +1,14 @@
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.hostname = "kube-master-2"
+  config.vm.network "private_network", ip: "192.168.43.10"
+  Vagrant::DEFAULT_SERVER_URL.replace('https://vagrantcloud.com')
+  
+  config.vm.synced_folder "../../", "/files"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+  end
+
+end
