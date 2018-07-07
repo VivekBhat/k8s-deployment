@@ -1,4 +1,4 @@
-Useful commands:
+### Useful commands:
 
 `kubectl get all` 
 
@@ -11,3 +11,21 @@ Useful commands:
 `kubectl delete deployment/myapp-deployment` To delete the deployment
 
 `kubectl create -f deployment-definition.yml --record` to record the CHANGE-CAUSE
+
+OR
+
+`kubectl create --filename=deployment-definition.yml --record=true`
+
+
+### Updating the image:
+
+kubectl set image deployment/myapp-deployment nginx-container=nginx:1.14
+
+
+### Undoing the deployment
+
+```
+kubectl rollout undo deployment/myapp-deployment
+
+kubectl rollout history deployment/myapp-deployment
+```

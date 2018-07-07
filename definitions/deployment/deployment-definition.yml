@@ -15,8 +15,9 @@ spec:
         type: front-end
     spec:
       containers:
-        - name: nginx-container
-          image: nginx:1.12
+        - name: hello-world
+          image: hello-world
+
   replicas: 3
   selector:
     matchLabels:
