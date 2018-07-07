@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   config.vm.hostname = "kube-node1"
   config.vm.network "private_network", ip: "192.168.33.11"
-  config.vm.synced_folder "../", "/files"
+  config.vm.synced_folder "../../", "/files"
   Vagrant::DEFAULT_SERVER_URL.replace('https://vagrantcloud.com')
 
   config.vm.provider "virtualbox" do |vb|
