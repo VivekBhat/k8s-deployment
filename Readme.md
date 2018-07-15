@@ -1,0 +1,1 @@
+This is a repo of me experimenting with Kubernetes deploymentd and rolling updates for a web application
