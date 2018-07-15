@@ -1,3 +1,3 @@
-`kubectl get nodes`
+Use `kubectl get nodes` to get all the nodes in the cluster
 
-[Images](../resources/nodes.png)
+![Images](../resources/nodes.png)
