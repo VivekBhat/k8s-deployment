@@ -19,7 +19,6 @@ The folder structure:
 │   │   └── pod-definition.yml
 │   └── replicaset
 │       └── replicaset-definition.yml
-├── scratch
 └── setup_scripts
     ├── install_docker.sh
     └── install_kubeadm.sh
