@@ -38,13 +38,13 @@ There are various known ways to setup the infrastructure like:
     └── install_kubeadm.sh
 ```
 
-#### Boxes:
+#### boxes:
 This has the Vagrantfile for the 3 VMs that I am using. 
 
-### definitions:
+##### definitions:
 This folder has the various yaml config files that are needed to create the various objects in kubernetes
 
-### setup_scripts:
+#### setup_scripts:
 If you are doing a pristine install then these scripts can help you setup docker and then kubernetes on the nodes. 
 
 **Note:** Docker and kubernetes are needed in all the nodes and master. We will be using docker 17.03 installation 
