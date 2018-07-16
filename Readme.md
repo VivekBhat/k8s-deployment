@@ -20,22 +20,44 @@ There are various known ways to setup the infrastructure like:
 .
 ├── Readme.md
 ├── boxes
-│   ├── master
-│   │   └── Vagrantfile
-│   ├── node-1
-│   │   └── Vagrantfile
-│   └── node-2
-│       └── Vagrantfile
+│   ├── Readme.md
+│   ├── master
+│   │   └── Vagrantfile
+│   ├── master-2
+│   │   └── Vagrantfile
+│   ├── node-1
+│   │   └── Vagrantfile
+│   └── node-2
+│       └── Vagrantfile
 ├── definitions
-│   ├── deployment
-│   │   └── deployment-definition.yml
-│   ├── pod-definition
-│   │   └── pod-definition.yml
-│   └── replicaset
-│       └── replicaset-definition.yml
+│   ├── deployment
+│   │   ├── Readme.md
+│   │   └── deployment-definition.yml
+│   ├── pod-definition
+│   │   ├── Readme.md
+│   │   └── pod-definition.yml
+│   └── replicaset
+│       └── replicaset-definition.yml
+├── example-voting-app-kubernetes
+│   ├── pods
+│   │   ├── postgres-pod.yml
+│   │   ├── redis-pod.yml
+│   │   ├── result-app-pod.yml
+│   │   ├── voting-app-pod.yml
+│   │   └── worker-app-pod.yml
+│   └── services
+│       ├── postgres-service.yml
+│       ├── redis-service.yml
+│       ├── result-app-service.yml
+│       └── voting-app-service.yml
+├── resources
+│   └── nodes.png
 └── setup_scripts
     ├── install_docker.sh
     └── install_kubeadm.sh
+
+14 directories, 23 files
+
 ```
 
 #### boxes:
