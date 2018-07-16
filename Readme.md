@@ -76,4 +76,4 @@ This folder has the definitions for the various pods and services required to de
 #### 4. setup_scripts:
 If you are doing a pristine install then these scripts can help you setup docker and then kubernetes on the nodes. 
 
-**Note:** Docker and kubernetes are needed in all the nodes and master. We will be using docker 17.03 installation 
+> **Note:** Docker and kubernetes are needed in all the nodes and master. We will be using docker 17.03 installation 
