@@ -70,7 +70,10 @@ There are various known ways to setup the infrastructure like:
 #### 2. definitions:
 This folder has the various yaml config files that are needed to create the various objects in kubernetes along with a Readme for the various useful commands
 
-#### 3. setup_scripts:
+#### 3. example-voting-app-kubernetes:
+This folder has the definitions for the various pods and services required to deploy the python based voting app on kubenernetes 
+
+#### 4. setup_scripts:
 If you are doing a pristine install then these scripts can help you setup docker and then kubernetes on the nodes. 
 
 **Note:** Docker and kubernetes are needed in all the nodes and master. We will be using docker 17.03 installation 
