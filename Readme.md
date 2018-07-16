@@ -60,13 +60,17 @@ There are various known ways to setup the infrastructure like:
 
 ```
 
-#### boxes:
-This has the Vagrantfile for the 3 VMs that I am using. 
+### Folders
+#### 1. boxes:
+* **master:** This has the Vagrantfile for the master node
+* **master-2:** This has the Vagrantfile for the second master node
+* **node-1:** This has the Vagrantfile for the first worker node
+* **node-2:** This has the Vagrantfile for the second worker node
 
-##### definitions:
-This folder has the various yaml config files that are needed to create the various objects in kubernetes
+#### 2. definitions:
+This folder has the various yaml config files that are needed to create the various objects in kubernetes along with a Readme for the various useful commands
 
-#### setup_scripts:
+#### 3. setup_scripts:
 If you are doing a pristine install then these scripts can help you setup docker and then kubernetes on the nodes. 
 
 **Note:** Docker and kubernetes are needed in all the nodes and master. We will be using docker 17.03 installation 
